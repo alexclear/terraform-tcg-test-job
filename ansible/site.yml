@@ -2,7 +2,7 @@
   vars_files:
     - vars/tcg.yml
   roles:
-    - role: mysql_ext_volume
+#    - role: mysql_ext_volume
     - role: mysql
       mysql_root_password: De8ahgahhohhieCapaiM
     - role: tcg_db
