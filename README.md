@@ -1,0 +1,8 @@
+- Install Terraform 0.12 and Ansible 2.9.1
+- Set your AWS credentials in ~/.aws/credentials (your AWS user should have a broad range of permissions so make it an account admin for testing)
+- Visit https://aws.amazon.com/marketplace/pp?sku=aw0evgkw8e5c1q413zgy5pjce and subscribe to this free AWS Marketplace product (the official CentOS 7 AMI)
+- Configure the AWS Terraform state backend in terraform.tf
+- Configure the AWS Terraform provider in providers.tf
+- Tweak vars.tf (set your SSH key and a list of public IP addresses that can connect to hosts over SSH)
+- Download terraform-inventory (https://github.com/adammck/terraform-inventory/releases/download/v0.9/terraform-inventory_0.9_linux_amd64.zip) and unpack it to your home folder, make sure it is executlable
+- Run ./create.sh in this folder

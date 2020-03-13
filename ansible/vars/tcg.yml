@@ -1,0 +1,5 @@
+tcg_mysql_password: paiVahgha2aeKioG4kai
+tcg_mysql_user: tcg
+tcg_mysql_db: tcg_db
+tcg_graylog_host: disney.com
+tcg_host: 0.0.0.0

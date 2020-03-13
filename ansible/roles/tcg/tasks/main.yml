@@ -1,0 +1,17 @@
+- name: install the TCG app
+  yum:
+    name: https://cloud.imhio.com/s/aDH5ktf99CG7k8D/download
+    state: present
+
+- name: copy a config file
+  template:
+    src: tcg.json
+    dest: /etc/tcg/tcg.json
+    owner: tcg
+    mode: 0400
+
+- name: start a service
+  service:
+    name: tcg
+    state: started
+    enabled: yes

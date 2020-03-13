@@ -1,0 +1,15 @@
+- name: install MySQL-python
+  yum:
+    name: MySQL-python
+
+- name: create a MySQL user
+  mysql_user:
+    name: "{{ tcg_mysql_user }}"
+    password: "{{ tcg_mysql_password }}"
+    priv: "{{ tcg_mysql_db }}.*:ALL"
+    host: "%"
+
+- name: create a MySQL DB
+  mysql_db:
+    name: "{{ tcg_mysql_db }}"
+    state: present
