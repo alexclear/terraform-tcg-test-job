@@ -1,4 +1,5 @@
 #!/bin/bash
+terraform init
 terraform apply -auto-approve
 ansible-galaxy install --force -r ./ansible/roles/requirements.yml
 sleep 30
